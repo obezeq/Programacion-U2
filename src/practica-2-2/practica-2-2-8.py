@@ -5,15 +5,18 @@ import os
 num = input("Introduce un número entero: ")
 
 try:
-    if str(float(num)) == f"{num}.0":
+    if num.isdigit():
         num = int(num)
-        list = []
 
-        n = num
-        while n >= 0:
-            print(n)
-            n = n - 2
-            n.
+        list = []
+        n = 0 if num % 2 == 0 else 1
+
+        while n <= num:
+            list.append(n)
+            for i in list[::-1]:
+                print(i, end=" ")
+            print()
+            n += 2
 
     else:
         print("ERROR: No has introducido un número entero.")
