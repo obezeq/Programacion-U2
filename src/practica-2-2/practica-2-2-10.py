@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def es_primo(numero):
-
+    
     if numero.isdigit():
         try:
             numero = int(numero)
