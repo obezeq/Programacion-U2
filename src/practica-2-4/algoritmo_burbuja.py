@@ -2,7 +2,6 @@
 
 def algoritmo_burbuja(a: list) -> list:
 
-
     iteraciones = len(a) - 1
 
     for i in range(iteraciones):
